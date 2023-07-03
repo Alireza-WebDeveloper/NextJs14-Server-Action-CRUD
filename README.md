@@ -1,7 +1,7 @@
 
 ## Next.Js Server Action CRUD
 ```install
- npm install
+npm install
 ```
 
 ```
