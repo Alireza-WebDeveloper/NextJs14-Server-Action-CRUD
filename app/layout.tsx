@@ -20,7 +20,7 @@ export default function RootLayout({
           {children}
           <ToastContainer
             transition={Zoom}
-            position="top-center"
+            position="top-left"
             autoClose={1000}
             closeOnClick={true}
             draggable={true}
