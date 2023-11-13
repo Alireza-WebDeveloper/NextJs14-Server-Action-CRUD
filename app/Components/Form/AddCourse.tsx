@@ -6,9 +6,8 @@ const AddCourse = () => {
   const [title, setTitle] = useState('');
   const [isPending, startTransition] = useTransition();
   // Form Submit
-  const handleSubmitForm = async (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmitForm = async () => {
     try {
-      e.preventDefault();
       const data = { title };
       await asyncAddCourse(data);
       toast.success('add course successfully');
@@ -17,7 +16,7 @@ const AddCourse = () => {
     }
   };
   return (
-    <form onSubmit={handleSubmitForm}>
+    <form action={handleSubmitForm}>
       <label
         htmlFor="default-search"
         className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"

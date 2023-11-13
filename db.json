@@ -1,12 +1,3 @@
 {
-  "courses": [
-    {
-      "title": "react",
-      "id": 1
-    },
-    {
-      "title": "javascript",
-      "id": 2
-    }
-  ]
+  "courses": []
 }
